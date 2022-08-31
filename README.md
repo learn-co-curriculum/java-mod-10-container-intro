@@ -54,6 +54,7 @@ Common Dockerfile commands:
 - `CMD/ENTRYPOINT` – specifies binary to run
 
 Dockerfile example:
+
 ``` text
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
@@ -65,6 +66,7 @@ ENTRYPOINT ["java","-cp","app:app/lib/*","hello.Application"]
 ```
 
 Dockerfile multi-stage example:
+
 ``` text
 FROM openjdk:8-jdk-alpine as build
 WORKDIR /workspace/app
